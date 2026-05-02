@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập về nhà buổi 3</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section id="bai1">
+      <h2>Bài 1: Form sign up</h2>
+      <form>
+        <h1>Try a free sample</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+          veritatis, facilis quis perferendis velit cum quia exercitationem
+          accusantium, asperiores animi eaque quas illum aliquam id eveniet,
+          quidem iste debitis excepturi. Veniam nemo, culpa commodi incidunt
+          inventore esse expedita, itaque, ratione consequatur sequi molestiae
+          laudantium? Ea quia facere tempore, maiores, amet omnis voluptates sit
+          labore impedit eaque, expedita placeat saepe laboriosam.
+        </p>
+        <div class="row">
+          <div class="col">
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" placeholder="John" required />
+          </div>
+          <div class="col">
+            <label for="lastName">Last name</label>
+            <input type="text" id="lastName" placeholder="Smith" required />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="john@example.com"
+              required
+            />
+          </div>
+          <div class="col">
+            <label for="address">Address</label>
+            <input type="text" id="address" placeholder="Silk St" required />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="city">City</label>
+            <input type="text" id="city" placeholder="London" required />
+          </div>
+          <div class="col">
+            <label for="state">State<span class="blur">(optional)</span></label>
+            <input type="text" id="state" required />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="code">ZIP code</label>
+            <input type="text" id="code" placeholder="EC2Y8DS" required />
+          </div>
+          <div class="col">
+            <label for="country">Country</label>
+            <select name="country" id="country">
+              <option value="1">United Kingdom</option>
+              <option value="2">Việt Nam</option>
+              <option value="3">Trung Quốc</option>
+              <option value="4">Ấn Độ</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn">SEND ME FREE COFFEE</button>
+      </form>
+    </section>
+    <section id="bai2">
+      <h2>Bài 2: Máy tính bỏ túi</h2>
+      <table class="calculator">
+        <tbody>
+          <tr>
+            <td colspan="4" class="left">9 + 9</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>*</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td>0</td>
+            <td>=</td>
+            <td>/</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="bai3">
+      <h2>Bài 3: Form Login</h2>
+      <form class="form-login">
+        <table class="form-box">
+          <tr>
+            <td>Username:</td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Password:</td>
+            <td><input type="password" /></td>
+          </tr>
+          <tr>
+            <td>City of Employment:</td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Web server:</td>
+            <td>
+              <select>
+                <option>-- Choose a server --</option>
+                <option>Google</option>
+                <option>Facebook</option>
+                <option>Youtube</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="align-top">Please specify your role:</td>
+            <td>
+              <label><input type="radio" name="role" /> Admin</label><br />
+              <label><input type="radio" name="role" /> Engineer</label><br />
+              <label><input type="radio" name="role" /> Manager</label><br />
+              <label><input type="radio" name="role" /> Guest</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="align-top">Single Sign-on to the following:</td>
+            <td>
+              <label><input type="checkbox" /> Mail</label><br />
+              <label><input type="checkbox" /> Payroll</label><br />
+              <label><input type="checkbox" /> Self-service</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2" class="buttons">
+              <input type="submit" value="Login" />
+              <input type="reset" value="Reset" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </section>
+    <section id="bai4">
+      <h2>Bài 4: Form contact</h2>
+      <form class="form-contact">
+        <h2 class="left-content">
+          Get in touch with us by filling contact form below
+        </h2>
+        <input
+          type="text"
+          placeholder="*Enter your full name"
+          required
+          class="set-margin"
+        />
+        <input type="text" placeholder="*Enter your full name" required />
+        <input type="text" placeholder="*Enter your full name" required />
+        <textarea
+          cols="70"
+          rows="10"
+          placeholder="* Enter message here"
+        ></textarea>
+        <button class="btn4">Send message</button>
+        <span>*Please fill all require form field, thanks!</span>
+      </form>
+    </section>
+  </body>
+</html>
