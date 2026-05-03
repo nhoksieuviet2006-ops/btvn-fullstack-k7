@@ -1,0 +1,128 @@
+/* CSS bài 1 */
+#bai1 .form-subcribe {
+  padding: 15px;
+  background-color: #334455;
+  border-radius: 15px;
+  max-width: 1000px;
+}
+#bai1 .form-subcribe-title {
+  margin-top: 10px;
+  color: #fff;
+  margin-left: 15px;
+}
+#bai1 .form-subcribe-title span {
+  color: #ffa506;
+}
+
+#bai1 .form-subcribe p {
+  color: #fff;
+  margin-left: 15px;
+}
+
+#bai1 .form-subcribe input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+#bai1 .form-subcribe .btn1 {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f8db35;
+  color: black;
+  cursor: pointer;
+}
+
+#bai1 .form-subcribe:hover input::placeholder {
+  color: #ffa506;
+}
+
+#bai1 .form-subcribe:hover input {
+  background-color: #ddd;
+}
+
+#bai1 .form-subcribe:hover .btn1 {
+  background-color: #ffa506;
+  color: #fff;
+}
+
+/* CSS bài 2 */
+#bai2 .block_quote {
+  position: relative;
+  width: 800px;
+  padding: 50px;
+  line-height: 1.5;
+  font-style: italic;
+  font-size: 20px;
+}
+
+#bai2 .block_quote::before,
+#bai2 .block_quote::after {
+  content: "“";
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background-color: #ccc;
+  border-radius: 50%;
+  justify-content: center;
+  /* align-items: center; */
+  font-size: 50px;
+  position: absolute;
+  font-weight: bold;
+}
+
+#bai2 .block_quote::before {
+  top: 0;
+  left: 0;
+}
+
+#bai2 .block_quote::after {
+  content: "”";
+  bottom: 0;
+  right: 0;
+}
+
+/* CSS bài 3 */
+#bai3 .items {
+  list-style: none;
+  font-size: 25px;
+}
+#bai3 .items li::before {
+  content: "😊";
+  margin-right: 15px;
+}
+
+#bai3 .items li:hover::before {
+  content: "😂";
+}
+
+/* CSS bài 4 */
+#bai4 .form-html {
+  width: 800px;
+}
+#bai4 .form-html h1 {
+  color: #62677f;
+}
+
+#bai4 .form-html p code {
+  background-color: #ccc;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+#bai4 .form-html p a {
+  color: blue;
+}
+
+#bai4 .form-html .box {
+  padding: 15px;
+  border: 2px solid #a4a2b5;
+  border-radius: 15px;
+}
+
+#bai4 .form-html .box a {
+  color: blue;
+}
