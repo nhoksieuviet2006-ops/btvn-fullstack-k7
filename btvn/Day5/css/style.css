@@ -1,0 +1,113 @@
+/* CSS bài 1 */
+#bai1 {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#bai1 .container {
+  position: relative;
+}
+
+#bai1 .container img {
+  max-width: 100%;
+  height: auto;
+}
+
+#bai1 .block_blur {
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+  background-color: #9b95bb;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.655);
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  opacity: 0.5;
+}
+
+#bai1 .block_blur h2 {
+  font-size: 30px;
+}
+
+#bai1 .block_blur p {
+  font-weight: bold;
+}
+
+#bai1 .block_blur p span {
+  text-decoration: underline;
+}
+
+/* CSS bai 2 */
+#bai2 {
+  width: 1200px;
+}
+
+#bai2 .item label {
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  background-color: #d85925;
+  color: #fff;
+  cursor: pointer;
+}
+
+#bai2 .item label::before {
+  content: "+";
+  font-size: 18px;
+  padding: 0px 5px;
+}
+
+#bai2 .item .content {
+  display: none;
+}
+#bai2 .item input:checked ~ .content {
+  display: block;
+}
+
+#bai2 .item input:checked ~ label::before {
+  content: "-";
+}
+
+/* CSS bai 3 */
+#bai3 .service-list {
+  display: flex;
+  /* margin: 0 auto; */
+}
+#bai3 .service-list .service-item {
+  padding: 15px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.655);
+  border-radius: 10px;
+  width: 25%;
+  margin: 0 auto;
+}
+
+#bai3 .service-list .service-item .icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid yellow;
+  text-align: center;
+  font-size: 50px;
+  margin: 10px auto;
+}
+
+#bai3 .service-list .service-item h2 {
+  text-align: center;
+}
+
+#bai3 .service-list .service-item p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#bai3 .service-list .service-item .btn {
+  display: block;
+  padding: 10px;
+  border: none;
+  background-color: orange;
+  color: #fff;
+  margin: 10px auto 20px;
+}
