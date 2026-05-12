@@ -1,0 +1,222 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lato, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.container h1 {
+  font-family: Lobster, sans-serif;
+  margin-bottom: 20px;
+}
+
+.container p {
+  margin-bottom: 20px;
+}
+
+.form-input .item {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.form-input .item .input-box {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.form-input .item .input-box .icon {
+  padding: 10px;
+  background-color: #ccc;
+  color: #fff;
+}
+
+.form-input .item .input-box input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.form-input .item .input-box .star,
+.form-input .item .input-box .close {
+  position: absolute;
+  left: 95%;
+  color: red;
+  font-size: 16px;
+}
+
+.form-input .item .input-box .close {
+  display: none;
+}
+
+.form-input .item .input-box:focus-within .star {
+  display: none;
+}
+
+.form-input .item .input-box:focus-within .close {
+  display: block;
+}
+
+.item .choose_idea {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.item .arrow {
+  position: absolute;
+  left: 95%;
+  color: #ccc;
+}
+
+.item .input-box textarea {
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+}
+.item.message .input-box .icon {
+  height: 100px;
+}
+
+.item.message .input-box .star,
+.item.message .input-box .close {
+  position: absolute;
+  left: 95%;
+  top: 15%;
+}
+
+.input-box:focus-within {
+  border: 1px solid #000;
+}
+
+.form-input .item .input-box:focus-within .icon {
+  background-color: #000;
+  color: #fff;
+}
+
+.form-input .item .input-box:focus-within input {
+  border: none;
+  outline: none;
+}
+
+.form-input .item .input-box:focus-within select {
+  outline: none;
+  border: none;
+}
+
+.form-input .item .input-box:focus-within textarea {
+  outline: none;
+  border: none;
+}
+
+/* Xử lý tooltip */
+.item {
+  position: relative;
+}
+
+.item .tooltip {
+  position: absolute;
+  top: -70%;
+  left: 10%;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  display: none;
+}
+
+.item.message .tooltip {
+  position: absolute;
+  top: -40%;
+}
+
+.item .triangle {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid black;
+  border-bottom: 10px solid transparent;
+  top: -5px;
+  left: 15%;
+  display: none;
+}
+
+.item.message .triangle {
+  top: -10px;
+}
+
+.item:focus-within .tooltip,
+.item:focus-within .triangle {
+  display: block;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .end-form {
+  font-size: 18px;
+  color: #626161;
+}
+
+.footer .end-form input {
+  margin: 0 5px;
+  width: 15px;
+  height: 15px;
+}
+
+.footer .btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: red;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+/* CSS checkbox */
+.end-form input[type="checkbox"] {
+  display: none;
+}
+
+.end-form label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  color: #999;
+  font-size: 18px;
+}
+
+.end-form label::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  border: 2px solid #ccc;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.end-form input[type="checkbox"]:checked + label::after {
+  content: "✓";
+  position: absolute;
+  left: 5px;
+  top: -1px;
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+}
