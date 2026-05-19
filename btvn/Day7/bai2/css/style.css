@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background: url(../image/background_form_login.jpg) no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Nunito, sans-serif;
+}
+
+.login-box {
+  position: relative;
+  width: 900px;
+  height: 450px;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.login-left {
+  width: 40%;
+  background-color: #ff574d;
+  color: #fff;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+.logo .jl {
+  display: inline-block;
+  padding: 5px;
+  background-color: #fff;
+  color: #ff574d;
+  border-radius: 5px;
+}
+
+.login-left p {
+  margin-bottom: 25px;
+}
+
+.login-left .btn {
+  padding: 10px 40px;
+  background-color: #fff;
+  color: #ff574d;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.social {
+  display: flex;
+  margin-top: 40px;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social a {
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.11);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.arrow {
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  color: #ff574d;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 45%;
+  left: 38%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* login-right */
+.login-right {
+  width: 60%;
+  padding: 50px 40px;
+}
+
+.login-right h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.login-right h2 span {
+  color: #ff574d;
+}
+
+.login-right h2 .underline {
+  border-bottom: 2px solid #ff574d;
+  padding-bottom: 5px;
+}
+
+.login-form .input-form {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login-form .options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.login-form .options label {
+  cursor: pointer;
+}
+
+.login-form .options input {
+  margin-right: 5px;
+}
+.login-form .options a {
+  text-decoration: none;
+  color: #888787;
+}
+
+.login-form .btn-login {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #ff574d;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.login-form .register {
+  text-align: center;
+}
